@@ -1,8 +1,77 @@
+/* color pink F94F6D */
+/* Border blue color 9AABD8 */
+@font-face {
+    font-family: "scoreboard-font";
+    src: url(/Assets/scoreboard.ttf);
+}
+@font-face {
+    font-family: "dotted";
+    src: url(/Assets/dotted.ttf);
+}
 body {
+
     margin: 0;
+    color: white;
+    font-size: 15.5px;
+    font-family: "Verdana", sans-serif;
+}
+.score {
+    font-family: 'dotted', sans-serif;
+    color: #F94F6D;
+    width: 155px;
+    height: 120px;
+    background-color: black;
+    border-radius: 8px;
+    font-size: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #1a2344;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    height: 385px;
+    width: 575px;
+}
+button {
+    font-family: 'dotted', sans-serif;
+    font-size: px;
+    margin: 5px;
+    width: 45px;
+    height: 45px;
+    background-color: #1a2344;
+    border-radius: 5px;
+    cursor: pointer;
+    border: #9AABD8 3px solid;
+    color: #9AABD8;
 }
 
-.container {
+button:hover {
+    background-color: #9AABD8;
+    color: #1a2344;
+}
+
+#home-scoreboard, #guest-scoreboard {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+#reset{
+    height: 100px;
+
+}
+#reset-button{
+    font-size: 25px;
+    font-family: 'Verdana', Courier, monospace;
+    width: 120px;
+    height: 50px;
 }
