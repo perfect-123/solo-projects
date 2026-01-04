@@ -1,20 +1,75 @@
 @font-face {
     font-family: "avatar";
-    src: url(Assets/avatar.ttf);
+    src: url(./Assets/avatar.ttf);
 }
+
 
 body {
-    margin: 0;
     text-align: center;
+    padding-top: 100px;
+    width: 100%;
+    margin: 0;
 }
-#main-title {
-    font-family: 'avatar', sans-serif;
-    font-size: 10px;
-}
-
-
-.container {
+/* Navigation bar styles */
+#navbar {
     display: flex;
     justify-content: space-around;
+    background-color: black;
+    list-style: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 15px;
+    margin-top: 0;
+}
+/* <!-- Main view --> */
+#main-title {
+    font-family: 'avatar', sans-serif;
+    font-size: 80px;
+    color: red;;
 }
 
+/* Project Grid */
+#projects-title {
+    font-size: 12px;
+    color: red;
+    margin-bottom: 20px;
+}
+
+
+#project-grid {
+    display: flex;
+    flex-wrap: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.project-card {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 400px;
+    height: 200px;
+    margin: 20px;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.project-tags {
+    margin: 10px 0 0 0 ;
+    font-size: 14px;
+    color: lightgray;
+    display: flex;
+    list-style: none;
+
+}
+
+.tag{
+    font-size: 12px;
+    margin-right: 10px;
+    border: 1px solid lightgray;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
