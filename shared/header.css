@@ -1,0 +1,32 @@
+/* Navigation bar styles */
+#navbar {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    overflow: hidden; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid gray;
+}
+ul li a{
+    display: block;
+    color: white;
+    padding: 14px 36px;
+    text-decoration:none;
+}
+ul li a:hover {
+    background-image: linear-gradient(45deg,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;;
+}
+
+.navbar-link{
+    float: left;
+}
+#about-nav{
+    float: right;
+}

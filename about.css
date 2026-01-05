@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "game-font";
+    src: url(./Assets/game-font.ttf);
+}
+
+
+body {
+    background: rgb(10, 10, 10);
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+ 
+
+
+/* <!-- Main view --> */
+.hero{
+    min-height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-title,  #main-message{
+    font-family: 'game-font', sans-serif;
+    background-image: linear-gradient(45deg,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#main-title{
+    font-size: 100px;
+    margin-bottom: 20px;
+}
+#main-message{
+    font-size: 25px;
+}

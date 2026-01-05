@@ -5,35 +5,39 @@
 
 
 body {
+    background: rgb(10, 10, 10);
     text-align: center;
-    padding-top: 100px;
     width: 100%;
     margin: 0;
 }
-/* Navigation bar styles */
-#navbar {
-    display: flex;
-    justify-content: space-around;
-    background-color: black;
-    list-style: none;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    padding: 15px;
-    margin-top: 0;
-}
+ 
+
+
 /* <!-- Main view --> */
-#main-title {
-    font-family: 'avatar', sans-serif;
-    font-size: 80px;
-    color: red;;
+.hero{
+    min-height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+#main-title,  #main-message{
+    font-family: 'avatar', sans-serif;
+    background-image: linear-gradient(45deg,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#main-title{
+    font-size: 100px;
+    margin-bottom: 20px;
+}
 /* Project Grid */
 #projects-title {
     font-size: 12px;
-    color: red;
+    color: rgb(255, 255, 255);
     margin-bottom: 20px;
 }
 
@@ -46,8 +50,9 @@ body {
 }
 
 .project-card {
-    background-color: rgba(0, 0, 0, 0.5);
-    border: 1px solid rgb(255, 255, 255);
+    background: transparent; 
+    backdrop-filter: blur(10px);
+    border: 1px solid grey;
     border-radius: 10px;
     width: 400px;
     height: 200px;
@@ -55,6 +60,9 @@ body {
     padding: 10px;
     color: white;
     cursor: pointer;
+}
+.completed:hover {
+    border: 1px solid white;    
 }
 
 .project-tags {
