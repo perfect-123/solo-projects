@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="unit-converter.css">
+        <link rel="stylesheet" href="/shared/header.css">
+    </head>
+    <body>
+        <ul id="navbar">
+        <li class="navbar-link"><a href="/index.html">SoloProjects</a></li>
+        <li class="navbar-link" id="about-nav"><a href="/about.html">About</a></li>
+        </ul>
+
+
+
+
+        <div id="input-container">
+            <h1>Metric/Imperial Unit Converter</h1>
+            <input type="number" class="meters-input" placeholder="0" id="input-number" size="50">
+            <div class="container" onclick="convert()">Convert</div>
+        </div>
+
+        <div class="metric">
+            <h2>Length(Meter/Feet)</h2>
+            <p><span class="meters-input">0 </span>meters = <span class="feet-output">0</span> feet | <span class="feet-input">0 </span>feet = <span class="meters-input">0</span> </p>
+        </div>
+
+        <div class="metric">
+            <h2>Volume (Liters/Gallons)</h2>
+            <p><span class="Liters">0 </span>liters = <span class="Gallons">0</span> gallons | <span class="Gallons">0 </span>gallons = <span class="Liters">0</span> liters </p>
+        </div>
+
+        <div class="metric">
+            <h2>Mass (Kilograms/Pounds)</h2>
+            <p><span class="Kilograms">0 </span>kilograms = <span class="Pounds">0</span> pounds | <span class="Pounds">0 </span>pounds = <span class="Kilograms">0</span> kilograms </p>
+        </div>
+
+
+        <script src="unit-converter.js"></script>
+    </body>
+</html>
